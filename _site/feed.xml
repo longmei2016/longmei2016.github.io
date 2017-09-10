@@ -7,6 +7,125 @@
 		<atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>html标签</title>
+				<description>&lt;h1&gt;1级标题 &lt;small&gt;副标题&lt;/small&gt;&lt;/h1&gt;
+&lt;h2&gt;2级标题 &lt;small&gt;副标题&lt;/small&gt;&lt;/h2&gt;
+&lt;h3&gt;3级标题 &lt;small&gt;副标题&lt;/small&gt;&lt;/h3&gt;
+&lt;h4&gt;3级标题 &lt;small&gt;副标题&lt;/small&gt;&lt;/h4&gt;
+&lt;h5&gt;3级标题 &lt;small&gt;副标题&lt;/small&gt;&lt;/h5&gt;
+&lt;h6&gt;3级标题 &lt;small&gt;副标题&lt;/small&gt;&lt;/h6&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;这是一个段落&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt; 将段落按左、中-center、右-right对齐 　 &lt;/p&gt;
+&lt;b&gt;粗体文本&lt;/b&gt;   ----  &lt;br&gt;
+&lt;i&gt;斜体文本&lt;/i&gt;   ----  &lt;br&gt;
+&lt;u&gt;下划线文本&lt;/u&gt;   ----  &lt;br&gt;
+&lt;big&gt;大一号字体&lt;/big&gt;   ----  &lt;br&gt;
+&lt;small&gt;小一号字体&lt;/small&gt;   ----  &lt;br&gt;
+&lt;strong&gt;加强显示字体&lt;/strong&gt;   ----  &lt;br&gt;
+&lt;em&gt;强调字体&lt;/em&gt;  ----  &lt;br&gt;
+&lt;q&gt;内联引用&lt;/q&gt;  ----  &lt;br&gt;
+&lt;del&gt; 被删除文字 &lt;/del&gt;  ----  &lt;br&gt;
+&lt;ins&gt;这一段文本是新插入至文档的&lt;/ins&gt;  ----  &lt;br&gt;
+&lt;font size=&quot;3&quot; color=&quot;red&quot;&gt;设置字体大小从1到7(1最小)，颜色使用名字或RGB的十六进制值&lt;/font&gt;  ----  &lt;br&gt;
+&lt;font color=00ff00&gt;字體顏色&lt;/font&gt;  ----  &lt;br&gt;
+&lt;font size=1&gt;最小字體&lt;/font&gt;  ----  &lt;br&gt;
+&lt;sup&gt;上标字&lt;/SUP&gt;  ----  &lt;br&gt;
+&lt;SUB&gt;下标字&lt;/SUB&gt;  ----  &lt;br&gt;
+
+&lt;!--这是一段注释。注释不会在浏览器中显示。--&gt;
+&lt;hr&gt;
+
+
+&lt;a href=&quot;http://www.w3school.com.cn&quot;&gt;This is a link&lt;/a&gt;
+格式标志标签
+&lt;p&gt;&lt;/p&gt; 创建一个段落
+
+&lt;dl&gt;&lt;/dl&gt; 定义列表
+&lt;dt&gt; 放在每个定义术语词前
+&lt;dd&gt; 放在每个定义之前
+&lt;ol&gt;&lt;/ol&gt; 创建一个标有数字的列表
+&lt;ul&gt;&lt;/ul&gt; 创建一个标有圆点的列表
+&lt;li&gt; 放在每个列表项之前,若在&lt;ol&gt;&lt;/ol&gt;之间则每个列表项加上一个数字,
+  若在&lt;ul&gt;&lt;/ul&gt;之间则每个列表项加上一个圆点 　 　
+&lt;div align=&quot;&quot;&gt;&lt;/div&gt; 用来排版大块HTML段落,也用于格式化表
+&lt;MENU&gt; 选项清单
+&lt;DIR&gt; 目录清单
+&lt;nobr&gt;&lt;/nobr&gt; 强行不换行
+&lt;hr size='9' width='80%' color='ff0000'&gt;水平線(設定寬度)
+&lt;center&gt;&lt;/center&gt; 水平居中
+链接标志表格标志
+&lt;a href=&quot;URL&quot;&gt;&lt;/a&gt; 创建超文本链接
+&lt;a href=&quot;mailtEMAIL&quot;&gt;
+&lt;/a&gt; 创建自动发送电子邮件的链接
+&lt;a name=&quot;name&quot;&gt;&lt;/a&gt; 创建位于文档内部的书签
+&lt;a href=&quot;#name&quot;&gt;&lt;/a&gt; 创建指向位于文档内部书签的链接
+&lt;p&gt;分割线&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;img src=&quot;/i/eg_tulip.jpg&quot;  alt=&quot;上海鲜花港 - 郁金香&quot; /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+  &lt;ol&gt;
+    &lt;li&gt;Coffee&lt;/li&gt;
+    &lt;li&gt;Tea&lt;/li&gt;
+    &lt;li&gt;Milk&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/p&gt;
+&lt;pre&gt;预先格式化文本&lt;/pre&gt;
+&lt;pre&gt;
+body {
+  color:red;
+}
+&lt;/pre&gt;
+&lt;code&gt;
+  body {
+    color:red;
+  }
+&lt;/code&gt; 程式码
+
+&lt;pre&gt;
+   &lt;title&gt; app/models/user.rb  &lt;/title&gt;
+  has_many :favorites
+  has_many :favorited_products, :through =&gt; :favorites, :source =&gt; :product
+&lt;/pre&gt;
+
+&lt;p&gt;Table with thead and tbody&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Header content 1&lt;/th&gt;
+      &lt;th&gt;Header content 2&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Body content 1&lt;/td&gt;
+      &lt;td&gt;Body content 2&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+
+&lt;br&gt;
+&lt;p&gt;Press 【CTRL-SHIFT-H】 in the editor to open the preview pane.&lt;/p&gt;
+
+&lt;hr&gt;
+</description>
+				<pubDate>Sun, 10 Sep 2017 00:00:00 +0800</pubDate>
+				<link>http://localhost:4000/2017/09/Lorem-hello</link>
+				<guid isPermaLink="true">http://localhost:4000/2017/09/Lorem-hello</guid>
+			</item>
+		
+			<item>
 				<title>Jekyll Clean Theme</title>
 				<description>&lt;ul&gt;
   &lt;li&gt;Get it from &lt;a href=&quot;https://github.com/scotte/jekyll-clean&quot;&gt;github&lt;/a&gt;.&lt;/li&gt;
@@ -203,11 +322,120 @@ respective owners:&lt;/p&gt;
 		
 			<item>
 				<title>Lorem ipsum dolor sit amet</title>
-				<description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam metus, commodo sit amet ante a, finibus efficitur lorem. Maecenas egestas purus in tempor volutpat. Sed dapibus tortor nec sem suscipit ullamcorper. Nulla nec lorem lacus. Phasellus condimentum massa quis dolor consequat viverra ut ac magna. Ut a consequat nisi. Vivamus at leo ut turpis convallis lacinia. Curabitur eu placerat quam. Donec ultricies faucibus dui, a tincidunt lorem lobortis condimentum.&lt;/p&gt;
+				<description>&lt;h1&gt;1级标题 &lt;small&gt;副标题&lt;/small&gt;&lt;/h1&gt;
+&lt;h2&gt;2级标题 &lt;small&gt;副标题&lt;/small&gt;&lt;/h2&gt;
+&lt;h3&gt;3级标题 &lt;small&gt;副标题&lt;/small&gt;&lt;/h3&gt;
+&lt;h4&gt;3级标题 &lt;small&gt;副标题&lt;/small&gt;&lt;/h4&gt;
+&lt;h5&gt;3级标题 &lt;small&gt;副标题&lt;/small&gt;&lt;/h5&gt;
+&lt;h6&gt;3级标题 &lt;small&gt;副标题&lt;/small&gt;&lt;/h6&gt;
 
-&lt;p&gt;Quisque aliquet consectetur justo sit amet convallis. Nunc vel aliquet ipsum, sit amet elementum justo. Vivamus id magna mi. Cras luctus est vel ipsum sagittis pellentesque. Vivamus ante elit, porttitor vitae quam quis, fermentum malesuada risus. Integer nec lectus vel lacus cursus tristique in euismod ipsum. Duis ut varius enim. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi et elit eu tortor lacinia sollicitudin non in lacus.&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;Integer at viverra turpis. Duis aliquam mattis sapien tempor eleifend. Mauris nec eleifend risus, quis mollis neque. Vivamus non dapibus justo, vel ornare magna. Nunc in nulla venenatis, imperdiet diam in, accumsan massa. Etiam congue augue ipsum, sit amet rutrum nisi blandit quis. Cras in lectus non lorem auctor consequat a vel sem. Aliquam erat volutpat. Fusce lobortis vel orci vitae ullamcorper. Phasellus id eleifend eros. Mauris vulputate, nisi vel auctor auctor, quam enim tincidunt felis, vitae fermentum odio tortor eget est. Integer ornare blandit lectus a accumsan.&lt;/p&gt;
+&lt;p&gt;这是一个段落&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt; 将段落按左、中-center、右-right对齐 　 &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;粗体文本&lt;/b&gt;   —-  &lt;br /&gt;
+&lt;i&gt;斜体文本&lt;/i&gt;   —-  &lt;br /&gt;
+&lt;u&gt;下划线文本&lt;/u&gt;   —-  &lt;br /&gt;
+&lt;big&gt;大一号字体&lt;/big&gt;   —-  &lt;br /&gt;
+&lt;small&gt;小一号字体&lt;/small&gt;   —-  &lt;br /&gt;
+&lt;strong&gt;加强显示字体&lt;/strong&gt;   —-  &lt;br /&gt;
+&lt;em&gt;强调字体&lt;/em&gt;  —-  &lt;br /&gt;
+&lt;q&gt;内联引用&lt;/q&gt;  —-  &lt;br /&gt;
+&lt;del&gt; 被删除文字 &lt;/del&gt;  —-  &lt;br /&gt;
+&lt;ins&gt;这一段文本是新插入至文档的&lt;/ins&gt;  —-  &lt;br /&gt;&lt;/p&gt;
+&lt;font size=&quot;3&quot; color=&quot;red&quot;&gt;设置字体大小从1到7(1最小)，颜色使用名字或RGB的十六进制值&lt;/font&gt;
+&lt;p&gt;—-  &lt;br /&gt;
+&amp;lt;font color=00ff00&amp;gt;字體顏色&amp;lt;/font&amp;gt;  —-  &lt;br /&gt;
+&amp;lt;font size=1&amp;gt;最小字體&amp;lt;/font&amp;gt;  —-  &lt;br /&gt;
+&lt;sup&gt;上标字&lt;/sup&gt;  —-  &lt;br /&gt;
+&lt;sub&gt;下标字&lt;/sub&gt;  —-  &lt;br /&gt;&lt;/p&gt;
+
+&lt;!--这是一段注释。注释不会在浏览器中显示。--&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.w3school.com.cn&quot;&gt;This is a link&lt;/a&gt;
+格式标志标签&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;创建一个段落&lt;/p&gt;
+
+&lt;dl&gt;&lt;/dl&gt;
+&lt;p&gt;定义列表&lt;/p&gt;
+&lt;dt&gt; 放在每个定义术语词前
+&lt;dd&gt; 放在每个定义之前
+&lt;ol&gt;&lt;/ol&gt; 创建一个标有数字的列表
+&lt;ul&gt;&lt;/ul&gt; 创建一个标有圆点的列表
+&lt;li&gt; 放在每个列表项之前,若在&lt;ol&gt;&lt;/ol&gt;之间则每个列表项加上一个数字,
+  若在&lt;ul&gt;&lt;/ul&gt;之间则每个列表项加上一个圆点 　 　
+&lt;div align=&quot;&quot;&gt;&lt;/div&gt; 用来排版大块HTML段落,也用于格式化表
+&lt;menu&gt; 选项清单
+&lt;DIR&gt; 目录清单
+&lt;nobr&gt;&lt;/nobr&gt; 强行不换行
+&lt;hr size=&quot;9&quot; width=&quot;80%&quot; color=&quot;ff0000&quot; /&gt;水平線(設定寬度)
+&lt;center&gt;&lt;/center&gt; 水平居中
+链接标志表格标志
+&lt;a href=&quot;URL&quot;&gt;&lt;/a&gt; 创建超文本链接
+&lt;a href=&quot;mailtEMAIL&quot;&gt;
+&lt;/a&gt; 创建自动发送电子邮件的链接
+&lt;a name=&quot;name&quot;&gt;&lt;/a&gt; 创建位于文档内部的书签
+&lt;a href=&quot;#name&quot;&gt;&lt;/a&gt; 创建指向位于文档内部书签的链接
+&lt;p&gt;分割线&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;img src=&quot;/i/eg_tulip.jpg&quot; alt=&quot;上海鲜花港 - 郁金香&quot; /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+  &lt;ol&gt;
+    &lt;li&gt;Coffee&lt;/li&gt;
+    &lt;li&gt;Tea&lt;/li&gt;
+    &lt;li&gt;Milk&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/p&gt;
+&lt;pre&gt;预先格式化文本&lt;/pre&gt;
+&lt;pre&gt;
+body {
+  color:red;
+}
+&lt;/pre&gt;
+&lt;code&gt;
+  body {
+    color:red;
+  }
+&lt;/code&gt; 程式码
+
+&lt;pre&gt;
+   &lt;title&gt; app/models/user.rb  &lt;/title&gt;
+  has_many :favorites
+  has_many :favorited_products, :through =&amp;gt; :favorites, :source =&amp;gt; :product
+&lt;/pre&gt;
+
+&lt;p&gt;Table with thead and tbody&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Header content 1&lt;/th&gt;
+      &lt;th&gt;Header content 2&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Body content 1&lt;/td&gt;
+      &lt;td&gt;Body content 2&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr /&gt;
+
+&lt;br /&gt;
+&lt;p&gt;Press 【CTRL-SHIFT-H】 in the editor to open the preview pane.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;/DIR&gt;&lt;/menu&gt;&lt;/li&gt;&lt;/dd&gt;&lt;/dt&gt;
 </description>
 				<pubDate>Wed, 23 Jul 2014 07:25:06 +0800</pubDate>
 				<link>http://localhost:4000/2014/07/Lorem-ipsum-dolor-sit-amet</link>
