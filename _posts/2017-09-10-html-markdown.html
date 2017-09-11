@@ -1,16 +1,16 @@
 ---
-title: html标签
+title: html markdown
 layout: post
-data: 2017-9-10 18:34:00 +0800
-tags: [写作]
+categories: [markdown,html]
+tags: [Writting]
 ---
 
 <h1>1级标题 <small>副标题</small></h1>
 <h2>2级标题 <small>副标题</small></h2>
 <h3>3级标题 <small>副标题</small></h3>
-<h4>3级标题 <small>副标题</small></h4>
-<h5>3级标题 <small>副标题</small></h5>
-<h6>3级标题 <small>副标题</small></h6>
+<h4>4级标题 <small>副标题</small></h4>
+<h5>5级标题 <small>副标题</small></h5>
+<h6>6级标题 <small>副标题</small></h6>
 
 <hr>
 
@@ -35,48 +35,32 @@ tags: [写作]
 <!--这是一段注释。注释不会在浏览器中显示。-->
 <hr>
 
-
 <a href="http://www.w3school.com.cn">This is a link</a>
-格式标志标签
-<p></p> 创建一个段落
 
 <dl></dl> 定义列表
 <dt> 放在每个定义术语词前
 <dd> 放在每个定义之前
+
 <ol></ol> 创建一个标有数字的列表
 <ul></ul> 创建一个标有圆点的列表
-<li> 放在每个列表项之前,若在<ol></ol>之间则每个列表项加上一个数字,
-  若在<ul></ul>之间则每个列表项加上一个圆点 　 　
-<div align=""></div> 用来排版大块HTML段落,也用于格式化表
-<MENU> 选项清单
-<DIR> 目录清单
-<nobr></nobr> 强行不换行
-<hr size='9' width='80%' color='ff0000'>水平線(設定寬度)
-<center></center> 水平居中
-链接标志表格标志
-<a href="URL"></a> 创建超文本链接
-<a href="mailtEMAIL">
-</a> 创建自动发送电子邮件的链接
-<a name="name"></a> 创建位于文档内部的书签
-<a href="#name"></a> 创建指向位于文档内部书签的链接
-<p>分割线</p>
-<hr>
+<li> 放在每个列表项之前,
 
-<img src="/i/eg_tulip.jpg"  alt="上海鲜花港 - 郁金香" />
-
-<ul>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ul>
-
-<p>
-  <ol>
+  <ul>
     <li>Coffee</li>
     <li>Tea</li>
     <li>Milk</li>
-  </ol>
-</p>
+  </ul>
+
+  <p>
+    <ol>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+  </p>
+<hr>
+
+
 <pre>预先格式化文本</pre>
 <pre>
 body {
@@ -112,7 +96,25 @@ body {
 </table>
 <hr>
 
+<center></center> 水平居中
+
+<a href="URL"></a> 创建超文本链接
+<a href="mailtEMAIL">
+</a> 创建自动发送电子邮件的链接
+<a name="name"></a> 创建位于文档内部的书签
+<a href="#name"></a> 创建指向位于文档内部书签的链接
+<p>分割线</p>
+<hr size='100' width='80%' color='00ff00'> 水平線(設定寬度)
+
+<img src="/i/eg_tulip.jpg"  alt="上海鲜花港 - 郁金香" />
+
+<div align=""></div> 用来排版大块HTML段落,也用于格式化表
+
 <br>
 <p>Press 【CTRL-SHIFT-H】 in the editor to open the preview pane.</p>
 
+使用Atom预览markdown
+1、打开任意.md文件(markdown源文件)
+2、windows : ctrl + shift + p
+mac : command + shift + p
 <hr>

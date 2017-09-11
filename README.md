@@ -1,9 +1,8 @@
 Jekyll Clean
 ============
 
-* Get it from [github](https://github.com/scotte/jekyll-clean).
-* See the [live demo](https://scotte.github.io/jekyll-clean).
-* See it [in action on my own blog](https://scotte.org).
+* Get it from [github](https://github.com/longmei2016).
+* See it [in action on my own blog](https://longmei2016.github.io/).
 
 A simple and clean Jekyll theme using [bootstrap](http://getbootstrap.com)
 (not to be confused with jekyll-bootstrap) that's easy to modify and very
@@ -77,7 +76,7 @@ And then it's just a simple matter of running jekyll locally:
 $ jekyll serve --baseurl=''
 ```
 
-Now browse to http://127.0.0.1:4000
+Now browse to http://127.0.0.1
 
 Using gh-pages
 ==============
