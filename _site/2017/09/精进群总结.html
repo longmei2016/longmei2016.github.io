@@ -104,39 +104,11 @@ A jekyll theme
 
         </div>
         <div class="col-md-9">
+          <div class="article">
+            <div class="well">
+                <h1><a href="/2017/09/%E7%B2%BE%E8%BF%9B%E7%BE%A4%E6%80%BB%E7%BB%93">Sep 11, 2017 - 精进群总结</a></h1>
             
-<div class="article">
-    <div class="well">
-        <h1><a href="/2017/09/draft-jeklly">Sep 11, 2017 - draft-jeklly</a></h1>
-        
-        <div class="content">
-            <h3 id="创建文章的文件permalink">创建文章的文件Permalink</h3>
-<p>发表一篇新文章，你所需要做的就是在 /_posts 文件夹中创建一个新的文件。文件名的命名非常重要。Jekyll 要求一篇文章的文件名遵循下面的格式：
-年-月-日-标题.MARKUP
-在这里，年是 4 位数字，月和日都是 2 位数字。MARKUP扩展名代表了这篇文章是用什么格式写的。下面是一些合法的文件名的例子：
-2011-12-31-new-years-eve-is-awesome.md
-2012-09-12-how-to-write-a-blog.textile</p>
-
-<hr />
-
-<h3 id="使用草稿">使用草稿</h3>
-<p>草稿是没有日期的文章。它们是你还在创作中而暂时不想发表的文章。想要开始使用草稿，你需要在网站根目录下创建一个名为 _drafts 的文件夹（如在目录结构章节里描述的），并新建你的第一份草稿：</p>
-
-<p>|– _drafts/
-|   |– a-draft-post.md
-为了预览你拥有草稿的网站，运行带有 –drafts 配置选项的 jekyll serve 或者 jekyll build。此两种方法皆会将该草稿的修改时间赋值给草稿文章，作为其发布日期，所以你将看到当前编辑的草稿文章作为最新文章被生成。</p>
-
-<p>[48 个你需要知道的 Jekyll 使用技巧]https://crispgm.com/page/48-tips-for-jekyll-you-should-know.html</p>
-
-        </div>
-    </div>
-</div>
-
-<div class="article">
-    <div class="well">
-        <h1><a href="/2017/09/%E7%B2%BE%E8%BF%9B%E7%BE%A4%E6%80%BB%E7%BB%93">Sep 11, 2017 - 精进群总结</a></h1>
-        
-        <div class="content">
+            <div class="post-content">
             <hr />
 <h3 id="目标与完成情况对比">目标与完成情况对比</h3>
 <hr />
@@ -267,184 +239,23 @@ A jekyll theme
 <h4 id="执行计划">执行计划</h4>
 <p>未完待续。。。</p>
 
-        </div>
-    </div>
-</div>
-
-<div class="article">
-    <div class="well">
-        <h1><a href="/2017/09/Post-Markdown">Sep 11, 2017 - post markdown</a></h1>
-        
-        <div class="content">
-            <h1 id="1级标题---副标题">1级标题   <small>副标题</small></h1>
-<h2 id="2级标题---副标题">2级标题   <small>副标题</small></h2>
-<h3 id="3级标题---副标题">3级标题   <small>副标题</small></h3>
-<h4 id="4级标题---副标题">4级标题   <small>副标题</small></h4>
-<h5 id="5级标题---副标题">5级标题   <small>副标题</small></h5>
-<h6 id="6级标题---副标题">6级标题   <small>副标题</small></h6>
-<!-- <h1>1级标题 <small>副标题</small></h1>
-<h2>2级标题 <small>副标题</small></h2>
-<h3>3级标题 <small>副标题</small></h3>
-<h4>3级标题 <small>副标题</small></h4>
-<h5>3级标题 <small>副标题</small></h5>
-<h6>3级标题 <small>副标题</small></h6> -->
-
-<p><em>single asterisks</em> 斜体文字 <br />
-<strong>double asterisks</strong> 粗体文本  <br />
-如果要在文字前后直接插入普通的星号或底线，你可以用反斜线：*this text is surrounded by literal asterisks*   <br />
-如果要标记一小段行内代码，你可以用反引号把它包起来, 例如：Use the <code class="highlighter-rouge">printf()</code> function  <br /></p>
-
-<p align="center"> 将段落按左、中-center、右-right对齐 　 </p>
-<p><b>粗体文本</b> <br />
-<i>斜体文本</i> <br />
-<u>下划线文本</u> <br />
-<big>大一号字体</big> <br />
-<small>小一号字体</small> <br />
-<strong>加强显示字体</strong> <br />
-<em>强调字体</em> <br />
-<q>内联引用</q> <br />
-<del> 被删除文字 </del> <br /></p>
-<font size="3" color="red">设置字体大小从1到7(1最小)，颜色使用名字或RGB的十六进制值</font>
-<p><br /></p>
-<font color="00ff00">字體顏色</font>
-<p><br /></p>
-<font size="1">最小字體</font>
-<p><br />
-<sup>上标字</sup> <br />
-<sub>下标字</sub> <br /></p>
-
-<h3 id="code--ruby">Code @ ruby</h3>
-<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="nb">puts</span> <span class="s2">"Hello World!"</span>
-</code></pre>
-</div>
-<h3 id="code--python">Code @ python</h3>
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">puts</span> <span class="s">"Hello World!"</span>
-</code></pre>
-</div>
-
-<hr />
-
-<p>this is a link
-<a href="https://help.github.com/articles/user-organization-and-project-pages/">the documentation here</a>.</p>
-
-<p>this is a image</p>
-
-<p><img src="http://upload-images.jianshu.io/upload_images/259-0ad0d0bfc1c608b6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
-<h2 id="table-example">Table Example</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>Tables</th>
-      <th style="text-align: center">Are</th>
-      <th style="text-align: center">Are</th>
-      <th style="text-align: right">Cool</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>col 111111</td>
-      <td style="text-align: center">1</td>
-      <td style="text-align: center">Hello</td>
-      <td style="text-align: right">$1600</td>
-    </tr>
-    <tr>
-      <td>col 222</td>
-      <td style="text-align: center">2</td>
-      <td style="text-align: center">Hello</td>
-      <td style="text-align: right">$12</td>
-    </tr>
-    <tr>
-      <td>col 3</td>
-      <td style="text-align: center">3</td>
-      <td style="text-align: center">Hello</td>
-      <td style="text-align: right">$1</td>
-    </tr>
-  </tbody>
-</table>
-
-<table>
-  <thead>
-    <tr>
-      <th>dog</th>
-      <th>bird</th>
-      <th>cat</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>foo</td>
-      <td>foo</td>
-      <td>foo</td>
-    </tr>
-    <tr>
-      <td>bar</td>
-      <td>bar</td>
-      <td>bar</td>
-    </tr>
-    <tr>
-      <td>baz</td>
-      <td>baz</td>
-      <td>baz</td>
-    </tr>
-  </tbody>
-</table>
-
-<ul>
-  <li>无序列表1 &lt;ul&gt;&lt;/ul&gt; &lt;li&gt;&lt;/li&gt;</li>
-  <li>无序列表2
-    <ul>
-      <li>第二级无序列表
-*</li>
-    </ul>
-  </li>
-</ul>
-
-<ol>
-  <li>有序列表1 &lt;ol&gt;&lt;/ol&gt; &lt;li&gt;&lt;/li&gt;</li>
-  <li>有序列表2</li>
-</ol>
-
-<pre>
-  has_many :favorites
-  has_many :favorited_products, :through =&gt; :favorites, :source =&gt; :product
-</pre>
-
-<blockquote>
-  <p>This is the first level of quoting.</p>
-
-  <blockquote>
-    <p>This is nested blockquote.</p>
-  </blockquote>
-
-  <p>Back to the first level.</p>
-</blockquote>
-
-<ul>
-  <li>A list item with a blockquote:
-    <blockquote>
-      <p>This is a blockquote
-inside a list item.</p>
-    </blockquote>
-  </li>
-</ul>
-
+            </div>
+            
+            </div>
+          </div>
+          <div class="pagination">
+              
+                <a class="btn btn-default" href="/2017/09/draft-jeklly" class="next">Newer Post</a>
+              
+              
+                <a class="btn btn-default" href="/2017/09/Post-Markdown" class="previous">Older Post</a>
+              
+          </div>
         </div>
     </div>
 </div>
 
 
-<div class="pagination">
-  
-  <span class="page_number ">Page: 1 of 2</span>
-  
-    <a class="btn btn-default" href="/page2" class="next">Older</a>
-  
-</div>
-
-        </div>
-    </div>
-</div>
 
 <div class="container-fluid">
     <div class="row-fluid">

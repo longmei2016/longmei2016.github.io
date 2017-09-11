@@ -104,35 +104,139 @@ A jekyll theme
 
         </div>
         <div class="col-md-9">
-            <div class="well">
+            
+<div class="article">
+    <div class="well">
+        <h1><a href="/2017/09/html-markdown">Sep 10, 2017 - html markdown</a></h1>
+        
+        <div class="content">
+            <h1>1级标题 <small>副标题</small></h1>
+<h2>2级标题 <small>副标题</small></h2>
+<h3>3级标题 <small>副标题</small></h3>
+<h4>4级标题 <small>副标题</small></h4>
+<h5>5级标题 <small>副标题</small></h5>
+<h6>6级标题 <small>副标题</small></h6>
 
+<hr>
 
-  <h1>markdown</h1>
+<p>这是一个段落</p>
+<p align="center"> 将段落按左、中-center、右-right对齐 　 </p>
+<b>粗体文本</b>   ----  <br>
+<i>斜体文本</i>   ----  <br>
+<u>下划线文本</u>   ----  <br>
+<big>大一号字体</big>   ----  <br>
+<small>小一号字体</small>   ----  <br>
+<strong>加强显示字体</strong>   ----  <br>
+<em>强调字体</em>  ----  <br>
+<q>内联引用</q>  ----  <br>
+<del> 被删除文字 </del>  ----  <br>
+<ins>这一段文本是新插入至文档的</ins>  ----  <br>
+<font size="3" color="red">设置字体大小从1到7(1最小)，颜色使用名字或RGB的十六进制值</font>  ----  <br>
+<font color=00ff00>字體顏色</font>  ----  <br>
+<font size=1>最小字體</font>  ----  <br>
+<sup>上标字</SUP>  ----  <br>
+<SUB>下标字</SUB>  ----  <br>
+
+<!--这是一段注释。注释不会在浏览器中显示。-->
+<hr>
+
+<a href="http://www.w3school.com.cn">This is a link</a>
+
+<dl></dl> 定义列表
+<dt> 放在每个定义术语词前
+<dd> 放在每个定义之前
+
+<ol></ol> 创建一个标有数字的列表
+<ul></ul> 创建一个标有圆点的列表
+<li> 放在每个列表项之前,
+
   <ul>
-    
-    <li><a href="/2017/09/draft-jeklly">Sep 11 - draft-jeklly</a></li>
-    
-    <li><a href="/2017/09/Post-Markdown">Sep 11 - post markdown</a></li>
-    
-    <li><a href="/2017/09/html-markdown">Sep 10 - html markdown</a></li>
-    
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
   </ul>
 
-  <h1>html</h1>
-  <ul>
-    
-    <li><a href="/2017/09/html-markdown">Sep 10 - html markdown</a></li>
-    
-  </ul>
-
-  <h1>总结</h1>
-  <ul>
-    
-    <li><a href="/2017/09/%E7%B2%BE%E8%BF%9B%E7%BE%A4%E6%80%BB%E7%BB%93">Sep 11 - 精进群总结</a></li>
-    
-  </ul>
+  <p>
+    <ol>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+  </p>
+<hr>
 
 
+<pre>预先格式化文本</pre>
+<pre>
+body {
+  color:red;
+}
+</pre>
+<code>
+  body {
+    color:red;
+  }
+</code> 程式码
+
+<pre>
+   <title> app/models/user.rb  </title>
+  has_many :favorites
+  has_many :favorited_products, :through => :favorites, :source => :product
+</pre>
+
+<p>Table with thead and tbody</p>
+<table>
+  <thead>
+    <tr>
+      <th>Header content 1</th>
+      <th>Header content 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Body content 1</td>
+      <td>Body content 2</td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+
+<center></center> 水平居中
+
+<a href="URL"></a> 创建超文本链接
+<a href="mailtEMAIL">
+</a> 创建自动发送电子邮件的链接
+<a name="name"></a> 创建位于文档内部的书签
+<a href="#name"></a> 创建指向位于文档内部书签的链接
+<p>分割线</p>
+<hr size='100' width='80%' color='00ff00'> 水平線(設定寬度)
+
+<img src="/i/eg_tulip.jpg"  alt="上海鲜花港 - 郁金香" />
+
+<div align=""></div> 用来排版大块HTML段落,也用于格式化表
+
+<br>
+<p>Press 【CTRL-SHIFT-H】 in the editor to open the preview pane.</p>
+
+使用Atom预览markdown
+1、打开任意.md文件(markdown源文件)
+2、windows : ctrl + shift + p
+mac : command + shift + p
+<hr>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="pagination">
+  
+      
+        <a class="btn btn-default" href="/index.html" class="previous">Newer</a>
+      
+  
+  <span class="page_number ">Page: 2 of 2</span>
+  
 </div>
 
         </div>
