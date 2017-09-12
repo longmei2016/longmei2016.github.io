@@ -1,5 +1,5 @@
 ---
-title: draft-jeklly
+title: draft-jekyll
 layout: post
 categories: [markdown]
 tags: [Writting]
@@ -22,3 +22,12 @@ tags: [Writting]
 为了预览你拥有草稿的网站，运行带有 --drafts 配置选项的 jekyll serve 或者 jekyll build。此两种方法皆会将该草稿的修改时间赋值给草稿文章，作为其发布日期，所以你将看到当前编辑的草稿文章作为最新文章被生成。
 
 [48 个你需要知道的 Jekyll 使用技巧]https://crispgm.com/page/48-tips-for-jekyll-you-should-know.html
+
+
+http://jekyllcn.com/docs/home/
+
+https://mba811.gitbooks.io/jekyll-study/content/index.html
+
+$ git add .
+$ git commit -a -m 'init commit.'
+$ git push origin master
