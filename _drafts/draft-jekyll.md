@@ -29,5 +29,5 @@ http://jekyllcn.com/docs/home/
 https://mba811.gitbooks.io/jekyll-study/content/index.html
 
 $ git add .
-$ git commit -a -m 'init commit.'
+$ git commit -a -m 'add a post.'
 $ git push origin master
