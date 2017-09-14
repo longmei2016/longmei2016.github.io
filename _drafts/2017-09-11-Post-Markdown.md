@@ -1,8 +1,6 @@
 ---
 title: post markdown
 layout: post
-categories: [markdown]
-tags: [Writting]
 ---
 
 

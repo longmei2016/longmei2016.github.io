@@ -1,8 +1,8 @@
 ---
-title: ORID-20170913
+title: 数组array的排序method：sort和sort_by
 layout: post
 categories: [ORID]
-tags: [ruby on rails]
+tags: [ruby, "排序"]
 ---
 
 --------
