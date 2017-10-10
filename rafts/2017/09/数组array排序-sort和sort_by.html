@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/theme.css" rel="stylesheet" type="text/css">
+    <link href="/css/syntax.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">My blog</a>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/">Home</a></li>
+                    <li class="active visible-xs-block"><a href="/links.html">Links</a></li>
+                    <li class="active"><a href="/archive.html">Archive</a></li>
+                    <li class="active"><a href="/category.html">Category</a></li>
+                    <li class="active"><a href="/tags.html">Tag</a></li>
+                    <li class="active"><a href="/about.html">About</a></li>
+                    
+                      <li class="active"><a href="https://github.com/longmei2016">Github</a></li>
+                    
+                </ul>
+              </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container container-left">
+    <div class="row">
+        <div class="col-md-3 hidden-xs">
+            <!-- <div class="sidebar well">
+
+</div> -->
+
+<div class="sidebar well">
+    <h1>Recent Posts</h1>
+    <ul>
+        
+          <li><a href="/2017/09/%E6%95%B0%E7%BB%84array%E6%8E%92%E5%BA%8F-sort%E5%92%8Csort_by0">数组array的排序method：sort和sort_by</a></li>
+        
+          <li><a href="/2017/09/%E6%95%B0%E7%BB%84array%E6%8E%92%E5%BA%8F-sort%E5%92%8Csort_by">数组array的排序method：sort和sort_by</a></li>
+        
+          <li><a href="/2017/09/ORID-20170914">ORID-20170914</a></li>
+        
+          <li><a href="/2017/09/ORID-20170913">ORID-20170913</a></li>
+        
+          <li><a href="/2017/09/8%E6%9C%88%E6%97%B6%E9%97%B4%E6%97%A5%E5%BF%97">8月时间日志</a></li>
+        
+    </ul>
+</div>
+
+
+<div class="sidebar well">
+  <h1>Posts Menu</h1>
+  <ul>
+    
+      <li>
+        <a href="/2017/09/%E6%95%B0%E7%BB%84array%E6%8E%92%E5%BA%8F-sort%E5%92%8Csort_by0">数组array的排序method：sort和sort_by</a>
+      </li>
+    
+      <li>
+        <a href="/2017/09/%E6%95%B0%E7%BB%84array%E6%8E%92%E5%BA%8F-sort%E5%92%8Csort_by">数组array的排序method：sort和sort_by</a>
+      </li>
+    
+      <li>
+        <a href="/2017/09/ORID-20170914">ORID-20170914</a>
+      </li>
+    
+      <li>
+        <a href="/2017/09/ORID-20170913">ORID-20170913</a>
+      </li>
+    
+      <li>
+        <a href="/2017/09/8%E6%9C%88%E6%97%B6%E9%97%B4%E6%97%A5%E5%BF%97">8月时间日志</a>
+      </li>
+    
+      <li>
+        <a href="/2017/09/%E7%B2%BE%E8%BF%9B%E7%BE%A4%E6%80%BB%E7%BB%93">精进群总结</a>
+      </li>
+    
+  </ul>
+</div>
+
+<div class="sidebar well">
+<h1>Links</h1>
+<ul>
+  <li><a href="https://github.com/longmei2016">Github</a></li>
+  <li><a href="https://longmei2016.github.io/">Blog</a></li>
+  <!-- <li><a href="#">Three</a></li>
+  <li><a href="#">Four</a></li> -->
+</ul>
+
+</div>
+
+        </div>
+        <div class="col-md-9">
+          <div class="article">
+            <div class="well">
+                <h1><a href="/2017/09/%E6%95%B0%E7%BB%84array%E6%8E%92%E5%BA%8F-sort%E5%92%8Csort_by">Sep 14, 2017 - 数组array的排序method：sort和sort_by</a></h1>
+            
+            <div class="post-content">
+            <hr />
+<h1 id="数组array排序sort">数组Array排序：sort</h1>
+<hr />
+<h4 id="sort--new_ary">sort → new_ary</h4>
+<h4 id="sort--ab-block---new_ary">sort { |a,b| block } → new_ary</h4>
+
+<p>Returns a new array created by sorting self.</p>
+
+<p>Comparisons for the sort will be done using the &lt;=&gt; operator or using an optional code block.
+The block must implement a comparison between a and b, and return -1 when a follows b; 0 when a and b are equivalent; or +1 if b follows a.</p>
+
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">"d"</span><span class="p">,</span> <span class="s2">"a"</span><span class="p">,</span> <span class="s2">"e"</span><span class="p">,</span> <span class="s2">"c"</span><span class="p">,</span> <span class="s2">"b"</span> <span class="p">]</span>
+<span class="n">a</span><span class="p">.</span><span class="nf">sort</span>                    <span class="c1">#=&gt; ["a", "b", "c", "d", "e"]</span>
+<span class="n">a</span><span class="p">.</span><span class="nf">sort</span> <span class="p">{</span> <span class="o">|</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="o">|</span> <span class="n">y</span> <span class="o">&lt;=&gt;</span> <span class="n">x</span> <span class="p">}</span>  <span class="c1">#=&gt; ["e", "d", "c", "b", "a"]</span>
+
+<span class="c1">### a = [ "d", "a", "e", "c", "b" ]</span>
+</code></pre>
+</div>
+
+<hr />
+<h1 id="sort-与-sort-区别">sort 与 sort！ 区别</h1>
+<hr />
+<p>sort和sort!函数，默认都使用 &lt;=&gt;比较，他们的区别在于：</p>
+
+<ul>
+  <li>
+    <p>sort! 可能会改变原先的数组，所以加个感叹号提醒</p>
+  </li>
+  <li>
+    <p>sort 返回的是新数组，没对原先的数组进行修改</p>
+  </li>
+</ul>
+
+<p><strong>在ruby的SDK里，能看到很多加了感叹号的函数，都意味着对函数操作的对象进行了状态更改。</strong></p>
+
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">"d"</span><span class="p">,</span> <span class="s2">"a"</span><span class="p">,</span> <span class="s2">"e"</span><span class="p">,</span> <span class="s2">"c"</span><span class="p">,</span> <span class="s2">"b"</span> <span class="p">]</span>
+
+<span class="n">a</span><span class="p">.</span><span class="nf">sort!</span>                    <span class="c1">#=&gt; ["a", "b", "c", "d", "e"]</span>
+<span class="c1">### a = [ "a", "b", "c", "d", "e" ]</span>
+
+<span class="n">a</span><span class="p">.</span><span class="nf">sort!</span> <span class="p">{</span> <span class="o">|</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="o">|</span> <span class="n">y</span> <span class="o">&lt;=&gt;</span> <span class="n">x</span> <span class="p">}</span>  <span class="c1">#=&gt; ["e", "d", "c", "b", "a"]</span>
+<span class="c1">### a = ["e", "d", "c", "b", "a"]</span>
+</code></pre>
+</div>
+
+<hr />
+<h1 id="sort-与-sort_by">sort 与 sort_by</h1>
+<hr />
+<p>sort_by { |obj| block } → array click to toggle source
+sort_by → an_enumerator</p>
+
+<p>Sorts enum using a set of keys generated by mapping the values in enum through the given block.</p>
+
+<p>If no block is given, an enumerator is returned instead.</p>
+
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="sx">%w{apple pear fig}</span><span class="p">.</span><span class="nf">sort_by</span> <span class="p">{</span> <span class="o">|</span><span class="n">word</span><span class="o">|</span> <span class="n">word</span><span class="p">.</span><span class="nf">length</span><span class="p">}</span>      <span class="c1">#=&gt; ["fig", "pear", "apple"]</span>
+</code></pre>
+</div>
+
+<hr />
+<h1 id="初级练习加分题让-topics-按投票数高低排列的方法--sort_by">初级练习加分题：让 topics 按投票数高低排列的方法 : sort_by</h1>
+<hr />
+
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">index</span>
+  <span class="vi">@topics</span> <span class="o">=</span> <span class="no">Topic</span><span class="p">.</span><span class="nf">all</span><span class="p">.</span><span class="nf">sort_by</span><span class="p">{</span><span class="o">|</span><span class="n">topic</span><span class="o">|</span> <span class="n">topic</span><span class="p">.</span><span class="nf">votes</span><span class="p">.</span><span class="nf">count</span><span class="p">}.</span><span class="nf">reverse</span>
+<span class="k">end</span>
+</code></pre>
+</div>
+
+            </div>
+            
+            </div>
+          </div>
+          <div class="pagination">
+              
+                <a class="btn btn-primary" href="/2017/09/%E6%95%B0%E7%BB%84array%E6%8E%92%E5%BA%8F-sort%E5%92%8Csort_by0" class="next">Newer Post: 数组array的排序method：sort和sort_by</a>
+              
+              
+                <a class="btn btn-primary right" href="/2017/09/ORID-20170914" class="previous">Older Post: ORID-20170914</a>
+              
+          </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12 footer navbar-inverse navbar-fixed-bottom">
+            <p class="copyright">&copy;2017 My blog. Powered by <a href="http://jekyllrb.com">Jekyll</a></p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>
+

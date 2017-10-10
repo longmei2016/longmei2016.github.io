@@ -19,8 +19,11 @@ layout: post
 
 *single asterisks* 斜体文字 <br>
 **double asterisks** 粗体文本  <br>
-如果要在文字前后直接插入普通的星号或底线，你可以用反斜线：\*this text is surrounded by literal asterisks\*   <br>
-如果要标记一小段行内代码，你可以用反引号把它包起来, 例如：Use the `printf()` function  <br>
+如果要在文字前后直接插入普通的星号或底线，你可以用反斜线：\*this text is surrounded by literal asterisks\*
+
+如果要标记一小段行内代码，你可以用反引号把它包起来, 例如：Use the `printf()` function  
+
+这就是 ~~删除线~~
 
 <p align="center"> 将段落按左、中-center、右-right对齐 　 </p>
 <b>粗体文本</b> <br>
@@ -47,6 +50,8 @@ puts "Hello World!"
 puts "Hello World!"
 ```
 
+行内代码：  ` puts "Hello World!" `
+
 <hr>
 this is a link
 [the documentation here](https://help.github.com/articles/user-organization-and-project-pages/).
@@ -54,6 +59,12 @@ this is a link
 this is a image
 
 ![](http://upload-images.jianshu.io/upload_images/259-0ad0d0bfc1c608b6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+Markdown 不支持指定图片的显示大小，不过可以通过直接插入<img />标签来指定相关属性：
+
+<img src="https://avatars2.githubusercontent.com/u/3265208?v=3&s=100" alt="GitHub" title="GitHub,Social Coding" width="50" height="50" />
+
+
 ## Table Example
 
 | Tables        | Are           | Are           | Cool     |
@@ -67,6 +78,18 @@ dog | bird | cat
 foo | foo  | foo
 bar | bar  | bar
 baz | baz  | baz
+
+
+
+- [ ] Eat
+- [x] Code
+  - [x] HTML
+  - [x] CSS
+  - [x] JavaScript
+- [ ] Sleep
+
+
+
 
 * 无序列表1 <ul></ul> <li></li>  
 * 无序列表2

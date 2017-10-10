@@ -57,15 +57,15 @@
     <h1>Recent Posts</h1>
     <ul>
         
-          <li><a href="/2017/09/draft-jekyll">draft-jekyll</a></li>
-        
-          <li><a href="/2017/09/%E5%85%B3%E4%BA%8E%E8%B7%AF%E7%94%B1Routes">深入路由routes</a></li>
-        
-          <li><a href="/2017/09/ORID-20170921">ORID-20170914</a></li>
+          <li><a href="/2017/09/%E6%95%B0%E7%BB%84array%E6%8E%92%E5%BA%8F-sort%E5%92%8Csort_by0">数组array的排序method：sort和sort_by</a></li>
         
           <li><a href="/2017/09/%E6%95%B0%E7%BB%84array%E6%8E%92%E5%BA%8F-sort%E5%92%8Csort_by">数组array的排序method：sort和sort_by</a></li>
         
-          <li><a href="/2017/09/Ruby-%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97%E7%AC%A6">Ruby 比较运算符</a></li>
+          <li><a href="/2017/09/ORID-20170914">ORID-20170914</a></li>
+        
+          <li><a href="/2017/09/ORID-20170913">ORID-20170913</a></li>
+        
+          <li><a href="/2017/09/8%E6%9C%88%E6%97%B6%E9%97%B4%E6%97%A5%E5%BF%97">8月时间日志</a></li>
         
     </ul>
 </div>
@@ -76,15 +76,7 @@
   <ul>
     
       <li>
-        <a href="/2017/09/draft-jekyll">draft-jekyll</a>
-      </li>
-    
-      <li>
-        <a href="/2017/09/%E5%85%B3%E4%BA%8E%E8%B7%AF%E7%94%B1Routes">深入路由routes</a>
-      </li>
-    
-      <li>
-        <a href="/2017/09/ORID-20170921">ORID-20170914</a>
+        <a href="/2017/09/%E6%95%B0%E7%BB%84array%E6%8E%92%E5%BA%8F-sort%E5%92%8Csort_by0">数组array的排序method：sort和sort_by</a>
       </li>
     
       <li>
@@ -92,7 +84,7 @@
       </li>
     
       <li>
-        <a href="/2017/09/Ruby-%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97%E7%AC%A6">Ruby 比较运算符</a>
+        <a href="/2017/09/ORID-20170914">ORID-20170914</a>
       </li>
     
       <li>
@@ -105,14 +97,6 @@
     
       <li>
         <a href="/2017/09/%E7%B2%BE%E8%BF%9B%E7%BE%A4%E6%80%BB%E7%BB%93">精进群总结</a>
-      </li>
-    
-      <li>
-        <a href="/2017/09/Post-Markdown">post markdown</a>
-      </li>
-    
-      <li>
-        <a href="/2017/09/html-markdown">html markdown</a>
       </li>
     
   </ul>
@@ -131,51 +115,43 @@
 
         </div>
         <div class="col-md-9">
+          <div class="article">
             <div class="well">
+                <h1><a href="/2017/09/%E6%95%B0%E7%BB%84array%E6%8E%92%E5%BA%8F-sort%E5%92%8Csort_by0">Sep 14, 2017 - 数组array的排序method：sort和sort_by</a></h1>
+            
+            <div class="post-content">
+            <hr />
+<h1 id="数组array排序sort">数组Array排序：sort</h1>
+<hr />
+<h3 id="sort--new_ary">sort → new_ary</h3>
+<h3 id="sort--ab-block---new_ary">sort { |a,b| block } → new_ary</h3>
 
+<p>Ruby 比较运算符
+假设变量 a 的值为 10，变量 b 的值为 20，那么：
+运算符	描述	实例
+==	检查两个操作数的值是否相等，如果相等则条件为真。	(a == b) 不为真。
+!=	检查两个操作数的值是否相等，如果不相等则条件为真。	(a != b) 为真。</p>
+<blockquote>
+  <div class="highlighter-rouge"><pre class="highlight"><code>检查左操作数的值是否大于右操作数的值，如果是则条件为真。	(a &gt; b) 不为真。 &lt;	检查左操作数的值是否小于右操作数的值，如果是则条件为真。	(a &lt; b) 为真。 =	检查左操作数的值是否大于或等于右操作数的值，如果是则条件为真。	(a &gt;= b) 不为真。 &lt;=	检查左操作数的值是否小于或等于右操作数的值，如果是则条件为真。	(a &lt;= b) 为真。 &lt;=&gt;	联合比较运算符。如果第一个操作数等于第二个操作数则返回 0，如果第一个操作数大于第二个操作数则返回 1，如果第一个操作数小于第二个操作数则返回 -1。	(a &lt;=&gt; b) 返回 -1。 ===	用于测试 case 语句的 when 子句内的相等。	(1...10) === 5 返回 true。 .eql?	如果接收器和参数具有相同的类型和相等的值，则返回 true。	1 == 1.0 返回 true，但是 1.eql?(1.0) 返回 false。 equal?	如果接收器和参数具有相同的对象 id，则返回 true。	如果 aObj 是 bObj 的副本，那么 aObj == bObj 返回 true，a.equal?bObj 返回 false，但是 a.equal?aObj 返回 true。
+</code></pre>
+  </div>
+</blockquote>
 
-  <h1>总结</h1>
-  <ul>
-    
-    <li><a href="/2017/09/8%E6%9C%88%E6%97%B6%E9%97%B4%E6%97%A5%E5%BF%97">Sep 12 - 8月时间日志</a></li>
-    
-    <li><a href="/2017/09/%E7%B2%BE%E8%BF%9B%E7%BE%A4%E6%80%BB%E7%BB%93">Sep 11 - 精进群总结</a></li>
-    
-  </ul>
-
-  <h1>ORID</h1>
-  <ul>
-    
-    <li><a href="/2017/09/ORID-20170921">Sep 21 - ORID-20170914</a></li>
-    
-    <li><a href="/2017/09/ORID-20170913">Sep 13 - ORID-20170913</a></li>
-    
-  </ul>
-
-  <h1>编程学习</h1>
-  <ul>
-    
-    <li><a href="/2017/09/%E5%85%B3%E4%BA%8E%E8%B7%AF%E7%94%B1Routes">Sep 21 - 深入路由routes</a></li>
-    
-    <li><a href="/2017/09/%E6%95%B0%E7%BB%84array%E6%8E%92%E5%BA%8F-sort%E5%92%8Csort_by">Sep 14 - 数组array的排序method：sort和sort_by</a></li>
-    
-    <li><a href="/2017/09/Ruby-%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97%E7%AC%A6">Sep 14 - Ruby 比较运算符</a></li>
-    
-  </ul>
-
-  <h1>markdown</h1>
-  <ul>
-    
-    <li><a href="/2017/09/draft-jekyll">Sep 21 - draft-jekyll</a></li>
-    
-  </ul>
-
-
-</div>
-
+            </div>
+            
+            </div>
+          </div>
+          <div class="pagination">
+              
+              
+                <a class="btn btn-primary right" href="/2017/09/%E6%95%B0%E7%BB%84array%E6%8E%92%E5%BA%8F-sort%E5%92%8Csort_by" class="previous">Older Post: 数组array的排序method：sort和sort_by</a>
+              
+          </div>
         </div>
     </div>
 </div>
+
+
 
 <div class="container-fluid">
     <div class="row-fluid">

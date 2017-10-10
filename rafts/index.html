@@ -57,15 +57,15 @@
     <h1>Recent Posts</h1>
     <ul>
         
-          <li><a href="/2017/09/draft-jekyll">draft-jekyll</a></li>
-        
-          <li><a href="/2017/09/%E5%85%B3%E4%BA%8E%E8%B7%AF%E7%94%B1Routes">深入路由routes</a></li>
-        
-          <li><a href="/2017/09/ORID-20170921">ORID-20170914</a></li>
+          <li><a href="/2017/09/%E6%95%B0%E7%BB%84array%E6%8E%92%E5%BA%8F-sort%E5%92%8Csort_by0">数组array的排序method：sort和sort_by</a></li>
         
           <li><a href="/2017/09/%E6%95%B0%E7%BB%84array%E6%8E%92%E5%BA%8F-sort%E5%92%8Csort_by">数组array的排序method：sort和sort_by</a></li>
         
-          <li><a href="/2017/09/Ruby-%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97%E7%AC%A6">Ruby 比较运算符</a></li>
+          <li><a href="/2017/09/ORID-20170914">ORID-20170914</a></li>
+        
+          <li><a href="/2017/09/ORID-20170913">ORID-20170913</a></li>
+        
+          <li><a href="/2017/09/8%E6%9C%88%E6%97%B6%E9%97%B4%E6%97%A5%E5%BF%97">8月时间日志</a></li>
         
     </ul>
 </div>
@@ -76,15 +76,7 @@
   <ul>
     
       <li>
-        <a href="/2017/09/draft-jekyll">draft-jekyll</a>
-      </li>
-    
-      <li>
-        <a href="/2017/09/%E5%85%B3%E4%BA%8E%E8%B7%AF%E7%94%B1Routes">深入路由routes</a>
-      </li>
-    
-      <li>
-        <a href="/2017/09/ORID-20170921">ORID-20170914</a>
+        <a href="/2017/09/%E6%95%B0%E7%BB%84array%E6%8E%92%E5%BA%8F-sort%E5%92%8Csort_by0">数组array的排序method：sort和sort_by</a>
       </li>
     
       <li>
@@ -92,7 +84,7 @@
       </li>
     
       <li>
-        <a href="/2017/09/Ruby-%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97%E7%AC%A6">Ruby 比较运算符</a>
+        <a href="/2017/09/ORID-20170914">ORID-20170914</a>
       </li>
     
       <li>
@@ -105,14 +97,6 @@
     
       <li>
         <a href="/2017/09/%E7%B2%BE%E8%BF%9B%E7%BE%A4%E6%80%BB%E7%BB%93">精进群总结</a>
-      </li>
-    
-      <li>
-        <a href="/2017/09/Post-Markdown">post markdown</a>
-      </li>
-    
-      <li>
-        <a href="/2017/09/html-markdown">html markdown</a>
       </li>
     
   </ul>
@@ -134,38 +118,25 @@
             
 <div class="article">
     <div class="well">
-        <h1><a href="/2017/09/draft-jekyll">Sep 21, 2017 - draft-jekyll</a></h1>
+        <h1><a href="/2017/09/%E6%95%B0%E7%BB%84array%E6%8E%92%E5%BA%8F-sort%E5%92%8Csort_by0">Sep 14, 2017 - 数组array的排序method：sort和sort_by</a></h1>
         
         <div class="content">
-            <h3 id="创建文章的文件permalink">创建文章的文件Permalink</h3>
-<p>发表一篇新文章，你所需要做的就是在 /_posts 文件夹中创建一个新的文件。文件名的命名非常重要。Jekyll 要求一篇文章的文件名遵循下面的格式：
-年-月-日-标题.MARKUP
-在这里，年是 4 位数字，月和日都是 2 位数字。MARKUP扩展名代表了这篇文章是用什么格式写的。下面是一些合法的文件名的例子：
-2011-12-31-new-years-eve-is-awesome.md
-2012-09-12-how-to-write-a-blog.textile</p>
-
+            <hr />
+<h1 id="数组array排序sort">数组Array排序：sort</h1>
 <hr />
+<h3 id="sort--new_ary">sort → new_ary</h3>
+<h3 id="sort--ab-block---new_ary">sort { |a,b| block } → new_ary</h3>
 
-<h3 id="使用草稿">使用草稿</h3>
-<p>草稿是没有日期的文章。它们是你还在创作中而暂时不想发表的文章。想要开始使用草稿，你需要在网站根目录下创建一个名为 _drafts 的文件夹（如在目录结构章节里描述的），并新建你的第一份草稿：</p>
-
-<p>|– _drafts/
-|   |– a-draft-post.md
-为了预览你拥有草稿的网站，运行带有 –drafts 配置选项的 jekyll serve 或者 jekyll build。此两种方法皆会将该草稿的修改时间赋值给草稿文章，作为其发布日期，所以你将看到当前编辑的草稿文章作为最新文章被生成。</p>
-
-<p>—jekyll s –drafts</p>
-
-<p>[48 个你需要知道的 Jekyll 使用技巧]https://crispgm.com/page/48-tips-for-jekyll-you-should-know.html</p>
-
-<p>http://jekyllcn.com/docs/home/</p>
-
-<p>https://mba811.gitbooks.io/jekyll-study/content/index.html</p>
-
-<p>$ git add .</p>
-
-<p>$ git commit -a -m ‘add a post.’</p>
-
-<p>$ git push origin master</p>
+<p>Ruby 比较运算符
+假设变量 a 的值为 10，变量 b 的值为 20，那么：
+运算符	描述	实例
+==	检查两个操作数的值是否相等，如果相等则条件为真。	(a == b) 不为真。
+!=	检查两个操作数的值是否相等，如果不相等则条件为真。	(a != b) 为真。</p>
+<blockquote>
+  <div class="highlighter-rouge"><pre class="highlight"><code>检查左操作数的值是否大于右操作数的值，如果是则条件为真。	(a &gt; b) 不为真。 &lt;	检查左操作数的值是否小于右操作数的值，如果是则条件为真。	(a &lt; b) 为真。 =	检查左操作数的值是否大于或等于右操作数的值，如果是则条件为真。	(a &gt;= b) 不为真。 &lt;=	检查左操作数的值是否小于或等于右操作数的值，如果是则条件为真。	(a &lt;= b) 为真。 &lt;=&gt;	联合比较运算符。如果第一个操作数等于第二个操作数则返回 0，如果第一个操作数大于第二个操作数则返回 1，如果第一个操作数小于第二个操作数则返回 -1。	(a &lt;=&gt; b) 返回 -1。 ===	用于测试 case 语句的 when 子句内的相等。	(1...10) === 5 返回 true。 .eql?	如果接收器和参数具有相同的类型和相等的值，则返回 true。	1 == 1.0 返回 true，但是 1.eql?(1.0) 返回 false。 equal?	如果接收器和参数具有相同的对象 id，则返回 true。	如果 aObj 是 bObj 的副本，那么 aObj == bObj 返回 true，a.equal?bObj 返回 false，但是 a.equal?aObj 返回 true。
+</code></pre>
+  </div>
+</blockquote>
 
         </div>
     </div>
@@ -173,11 +144,11 @@
 
 <div class="article">
     <div class="well">
-        <h1><a href="/2017/09/%E5%85%B3%E4%BA%8E%E8%B7%AF%E7%94%B1Routes">Sep 21, 2017 - 深入路由routes</a></h1>
+        <h1><a href="/2017/09/%E6%95%B0%E7%BB%84array%E6%8E%92%E5%BA%8F-sort%E5%92%8Csort_by">Sep 14, 2017 - 数组array的排序method：sort和sort_by</a></h1>
         
         <div class="content">
             <hr />
-<h1 id="目录">目录</h1>
+<h1 id="数组array排序sort">数组Array排序：sort</h1>
 <hr />
 <h4 id="sort--new_ary">sort → new_ary</h4>
 <h4 id="sort--ab-block---new_ary">sort { |a,b| block } → new_ary</h4>
@@ -251,7 +222,7 @@ sort_by → an_enumerator</p>
 
 <div class="article">
     <div class="well">
-        <h1><a href="/2017/09/ORID-20170921">Sep 21, 2017 - ORID-20170914</a></h1>
+        <h1><a href="/2017/09/ORID-20170914">Sep 14, 2017 - ORID-20170914</a></h1>
         
         <div class="content">
             <hr />
@@ -363,82 +334,109 @@ sort_by → an_enumerator</p>
 
 <div class="article">
     <div class="well">
-        <h1><a href="/2017/09/%E6%95%B0%E7%BB%84array%E6%8E%92%E5%BA%8F-sort%E5%92%8Csort_by">Sep 14, 2017 - 数组array的排序method：sort和sort_by</a></h1>
+        <h1><a href="/2017/09/ORID-20170913">Sep 13, 2017 - ORID-20170913</a></h1>
         
         <div class="content">
-            <h1 id="目录">目录</h1>
-<p><a href="#sort1">Array排序：sort</a></p>
-
-<p><a href="#sort2">sort与sort！区别</a></p>
-
-<p><a href="#sort3">sort 与 sort_by 区别</a></p>
-
+            <hr />
+<h1 id="目标与完成情况对比">目标与完成情况对比</h1>
 <hr />
-<h1 id="sort1">   数组Array排序：sort </h1>
-<hr />
-<h4 id="sort--new_ary">sort → new_ary</h4>
-<h4 id="sort--ab-block---new_ary">sort { |a,b| block } → new_ary</h4>
 
-<p>Returns a new array created by sorting self.</p>
+<table>
+  <thead>
+    <tr>
+      <th>No.</th>
+      <th>任务</th>
+      <th>验收标准</th>
+      <th>任务完成情况</th>
+      <th>用时</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Rails:环境建置9/12 ，1.5 hours</td>
+      <td>ORID or 提取练习</td>
+      <td>完成</td>
+      <td>练习时间1.8 hours，ORID：</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Rails:初级练习 9/13-9/14 ，5 hours</td>
+      <td>ORID or 提取练习</td>
+      <td>完成至3.4，预计还需要3～4小时</td>
+      <td>练习时间1.2 hours，ORID：</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><font color="red">深圳物联网展会总结</font></td>
+      <td>文档</td>
+      <td>未完成</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><font color="red">木木培养计划</font></td>
+      <td>计划表</td>
+      <td>未完成</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
 
-<p>Comparisons for the sort will be done using the &lt;=&gt; operator or using an optional code block.
-The block must implement a comparison between a and b, and return -1 when a follows b; 0 when a and b are equivalent; or +1 if b follows a.</p>
+<h3 id="计划外任务">计划外任务：</h3>
+<ol>
+  <li>PAC时间预约确认</li>
+  <li>IDC项目文档归档到RDM</li>
+</ol>
 
-<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">"d"</span><span class="p">,</span> <span class="s2">"a"</span><span class="p">,</span> <span class="s2">"e"</span><span class="p">,</span> <span class="s2">"c"</span><span class="p">,</span> <span class="s2">"b"</span> <span class="p">]</span>
-<span class="n">a</span><span class="p">.</span><span class="nf">sort</span>                    <span class="c1">#=&gt; ["a", "b", "c", "d", "e"]</span>
-<span class="n">a</span><span class="p">.</span><span class="nf">sort</span> <span class="p">{</span> <span class="o">|</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="o">|</span> <span class="n">y</span> <span class="o">&lt;=&gt;</span> <span class="n">x</span> <span class="p">}</span>  <span class="c1">#=&gt; ["e", "d", "c", "b", "a"]</span>
-
-<span class="c1">### a = [ "d", "a", "e", "c", "b" ]</span>
-</code></pre>
-</div>
-
-<hr />
-<h1 id="sort2"> sort 与 sort！ 区别  </h1>
-<hr />
-<p>sort和sort!函数，默认都使用 &lt;=&gt;比较，他们的区别在于：</p>
-
+<h3 id="今日时间分析">今日时间分析：</h3>
 <ul>
-  <li>
-    <p>sort! 可能会改变原先的数组，所以加个感叹号提醒</p>
-  </li>
-  <li>
-    <p>sort 返回的是新数组，没对原先的数组进行修改</p>
-  </li>
+  <li>Rails： 3hours 2 mins</li>
+  <li>PME ：46 mins</li>
+  <li>chore : 30 mins</li>
+  <li>PDCA : 55 mins</li>
 </ul>
 
-<p><strong>在ruby的SDK里，能看到很多加了感叹号的函数，都意味着对函数操作的对象进行了状态更改。</strong></p>
+<h3 id="阅读收获">阅读收获</h3>
+<p><a href="http://www.jianshu.com/p/b21e068343dc?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=pc_all_hots&amp;utm_source=recommendation">关于深度工作</a></p>
 
-<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">"d"</span><span class="p">,</span> <span class="s2">"a"</span><span class="p">,</span> <span class="s2">"e"</span><span class="p">,</span> <span class="s2">"c"</span><span class="p">,</span> <span class="s2">"b"</span> <span class="p">]</span>
+<p><strong>定义</strong></p>
 
-<span class="n">a</span><span class="p">.</span><span class="nf">sort!</span>                    <span class="c1">#=&gt; ["a", "b", "c", "d", "e"]</span>
-<span class="c1">### a = [ "a", "b", "c", "d", "e" ]</span>
-
-<span class="n">a</span><span class="p">.</span><span class="nf">sort!</span> <span class="p">{</span> <span class="o">|</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="o">|</span> <span class="n">y</span> <span class="o">&lt;=&gt;</span> <span class="n">x</span> <span class="p">}</span>  <span class="c1">#=&gt; ["e", "d", "c", "b", "a"]</span>
-<span class="c1">### a = ["e", "d", "c", "b", "a"]</span>
+<div class="highlighter-rouge"><pre class="highlight"><code>深度工作（Deep Work）：无干扰的状态下专注进行职业活动，使个人的认知能力达到极限。这种努力能够创造新价值，提升技能，而且难以复制。
 </code></pre>
 </div>
 
-<hr />
-<h1 id="sort3">  sort 与 sort_by </h1>
-<hr />
-<p>sort_by { |obj| block } → array click to toggle source
-sort_by → an_enumerator</p>
+<ul>
+  <li>高价值的工作必须建立在深度工作中，这样才能使专注力转换为生产力，持续产生结果。</li>
+</ul>
 
-<p>Sorts enum using a set of keys generated by mapping the values in enum through the given block.</p>
+<h3 id="未完成原因分析">未完成原因分析：</h3>
 
-<p>If no block is given, an enumerator is returned instead.</p>
+<p>1.家人来武汉的车票等情况沟通，超过一个小时。</p>
 
-<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="sx">%w{apple pear fig}</span><span class="p">.</span><span class="nf">sort_by</span> <span class="p">{</span> <span class="o">|</span><span class="n">word</span><span class="o">|</span> <span class="n">word</span><span class="p">.</span><span class="nf">length</span><span class="p">}</span>      <span class="c1">#=&gt; ["fig", "pear", "apple"]</span>
+<p>2.早起买菜&amp;昨晚未睡好， 导致精神状态不好。</p>
+
+<p>3.微信闲聊，简书看关于手绘的文章</p>
+
+<h1 id="objective----关于今天的课程-你记得什么-完成了什么-">Objective   <small> <em>关于今天的课程, 你记得什么? 完成了什么?</em> </small></h1>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git相关操作指令，上传github操作，上传heroku操作
 </code></pre>
 </div>
 
-<hr />
-<h1 id="初级练习加分题让-topics-按投票数高低排列的方法--sort_by">初级练习加分题：让 topics 按投票数高低排列的方法 : sort_by</h1>
-<hr />
+<h1 id="reflective----你要如何形容今天的情绪-今天的高峰是什么-今天的低点是什么-">Reflective   <small> <em>你要如何形容今天的情绪; 今天的高峰是什么? 今天的低点是什么?</em> </small></h1>
+<div class="highlighter-rouge"><pre class="highlight"><code>一般，无高峰和低谷
+</code></pre>
+</div>
 
-<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">index</span>
-  <span class="vi">@topics</span> <span class="o">=</span> <span class="no">Topic</span><span class="p">.</span><span class="nf">all</span><span class="p">.</span><span class="nf">sort_by</span><span class="p">{</span><span class="o">|</span><span class="n">topic</span><span class="o">|</span> <span class="n">topic</span><span class="p">.</span><span class="nf">votes</span><span class="p">.</span><span class="nf">count</span><span class="p">}.</span><span class="nf">reverse</span>
-<span class="k">end</span>
+<h1 id="interpretive----我们今天学到了什么-今天一个重要的领悟是什么-">Interpretive   <small> <em>我们今天学到了什么? 今天一个重要的领悟是什么?</em> </small></h1>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>解决问题方法论： 意识到有问题-&gt;认识问题-&gt;分析问题-&gt;解决问题的方法-&gt;解决问题的过程：挣扎、反思-&gt;解决了问题-&gt;形成肌肉记忆-&gt;总结，归档
+</code></pre>
+</div>
+
+<h1 id="decisional--我们会如何用一句话形容今天的工作-有哪些工作需要明天继续努力">Decisional  <small><em>我们会如何用一句话形容今天的工作; 有哪些工作需要明天继续努力?</em></small></h1>
+<div class="highlighter-rouge"><pre class="highlight"><code>争取明天完成初级练习、展会总结、木木培养计划-至少起一个头（英语、英语、阅读、画画）
 </code></pre>
 </div>
 
@@ -448,79 +446,172 @@ sort_by → an_enumerator</p>
 
 <div class="article">
     <div class="well">
-        <h1><a href="/2017/09/Ruby-%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97%E7%AC%A6">Sep 14, 2017 - Ruby 比较运算符</a></h1>
+        <h1><a href="/2017/09/8%E6%9C%88%E6%97%B6%E9%97%B4%E6%97%A5%E5%BF%97">Sep 12, 2017 - 8月时间日志</a></h1>
         
         <div class="content">
             <hr />
-<h1 id="ruby-比较运算符">Ruby 比较运算符</h1>
+<h1 id="目标与完成情况对比">目标与完成情况对比</h1>
 <hr />
-
-<p>假设变量 a 的值为 10，变量 b 的值为 20，那么：</p>
+<p>目标未制定，除了跟随精进群的目标</p>
 
 <table>
   <thead>
     <tr>
-      <th>运算符</th>
-      <th>描述</th>
-      <th>实例</th>
+      <th>No.</th>
+      <th>任务</th>
+      <th>完成情况</th>
+      <th>用时</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>==</td>
-      <td>检查两个操作数的值是否相等，如果相等则条件为真。</td>
-      <td>(a == b) 不为真。</td>
+      <td>1</td>
+      <td>Ajax 交互式网页应用 8/8-8/12</td>
+      <td>按时完成</td>
+      <td>8/8-8/12 ，12 hours</td>
     </tr>
     <tr>
-      <td>!=</td>
-      <td>检查两个操作数的值是否相等，如果不相等则条件为真。</td>
-      <td>(a != b) 为真。</td>
+      <td>2</td>
+      <td>百宝箱第一集 8/13-8/15</td>
+      <td>超前完成</td>
+      <td>8/12-8/14 , 7.5 hours</td>
     </tr>
     <tr>
-      <td>&gt;</td>
-      <td>检查左操作数的值是否大于右操作数的值，如果是则条件为真。</td>
-      <td>(a &gt; b) 不为真。</td>
+      <td>3</td>
+      <td>百宝箱第二集 8/16-8/18</td>
+      <td>超前完成</td>
+      <td>8/15 , 2.1 hours</td>
     </tr>
     <tr>
-      <td>&lt;</td>
-      <td>检查左操作数的值是否小于右操作数的值，如果是则条件为真。</td>
-      <td>(a &lt; b) 为真。</td>
+      <td>4</td>
+      <td>百宝箱第三集 8/19-8/21</td>
+      <td>按时完成</td>
+      <td>8/19-8/21 , 8.3 hours</td>
     </tr>
     <tr>
-      <td>&gt;=</td>
-      <td>检查左操作数的值是否大于或等于右操作数的值，如果是则条件为真。</td>
-      <td>(a &gt;= b) 不为真。</td>
+      <td>5</td>
+      <td>编程基础练习簿 8/22-8/25</td>
+      <td>按时完成</td>
+      <td>8/22-8/25 , 7.5 hours</td>
     </tr>
     <tr>
-      <td>&lt;=</td>
-      <td>检查左操作数的值是否小于或等于右操作数的值，如果是则条件为真。</td>
-      <td>(a &lt;= b) 为真。</td>
+      <td>💥</td>
+      <td>8/26-8/27 复盘精进群两周的心得或 ORID</td>
+      <td><font color="red">未完成</font></td>
+      <td> </td>
     </tr>
     <tr>
-      <td>&lt;=&gt;</td>
-      <td>联合比较运算符。如果第一个操作数等于第二个操作数则返回 0，如果第一个操作数大于第二个操作数则返回 1，如果第一个操作数小于第二个操作数则返回 -1。</td>
-      <td>(a &lt;=&gt; b) 返回 -1。</td>
+      <td>6</td>
+      <td>Web API 设计实作 8/28-8/31</td>
+      <td>按时完成</td>
+      <td>8/28-8/31 , 7.5 hours</td>
     </tr>
     <tr>
-      <td>===</td>
-      <td>用于测试 case 语句的 when 子句内的相等。</td>
-      <td>(1…10) === 5 返回 true。</td>
+      <td>7</td>
+      <td>数据库 SQL 入门 9/1-9/4</td>
+      <td>超前完成</td>
+      <td>9/1-9/2 , 4 hours</td>
     </tr>
     <tr>
-      <td>.eql?</td>
-      <td>如果接收器和参数具有相同的类型和相等的值，则返回 true。</td>
-      <td>1 == 1.0 返回 true，但是 1.eql?(1.0) 返回 false。</td>
+      <td>8</td>
+      <td>9/5-9/7完成 12-in-12里的 How to build a blog in rails 4</td>
+      <td>延期完成</td>
+      <td>9/7-9/9 , 6.8 hours</td>
     </tr>
     <tr>
-      <td>equal?</td>
-      <td>如果接收器和参数具有相同的对象 id，则返回 true。</td>
-      <td>如果 aObj 是 bObj 的副本，那么 aObj == bObj 返回 true，a.equal?bObj 返回 false，但是 a.equal?aObj 返回 true。</td>
+      <td>💥</td>
+      <td>9/8 ～ 9/9 精进群一个月的总结</td>
+      <td><font color="red">延期完成</font></td>
+      <td>9/11 , 2 hours</td>
     </tr>
   </tbody>
 </table>
 
-<p>来源：
-<a href="http://www.runoob.com/ruby/ruby-operator.html">http://www.runoob.com/ruby/ruby-operator.html</a></p>
+<h1 id="纯时间的记录及分配情况">纯时间的记录及分配情况</h1>
+
+<p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1fjgrysnbzvj309w0hs3yv.jpg" alt="" /></p>
+
+<font size="4" color="red" align="center">纯时间122.32 小时，每天投入约3.94 小时</font>
+
+<h4 id="rails-完成内容共计455小时平均每天146小时未投入时间共计12天日期81-87816-818826-827">Rails 完成内容，共计45.5小时，平均每天1.46小时（未投入时间，共计12天，日期：8/1-8/7，8/16-8/18，8/26-8/27）</h4>
+<ol>
+  <li>Ajax 交互式网页应用 8/8-8/12  —&gt;  8/8-8/12 ，12 hours</li>
+  <li>百宝箱第一集 8/13-8/15  —&gt;  8/12-8/14 , 7.5 hours</li>
+  <li>百宝箱第二集 8/16-8/18  —&gt;  8/15 , 2.1 hours</li>
+  <li>百宝箱第三集 8/19-8/21  —&gt;  8/19-8/21 , 8.3 hours</li>
+  <li>编程基础练习簿 8/22-8/25  —&gt;   8/22-8/25 , 7.5 hours</li>
+  <li>Web API 设计实作 8/28-8/31  —&gt;  8/28-8/31 , 7.5 hours</li>
+</ol>
+
+<h4 id="pme-共计-36-小时">PME ，共计 36 小时</h4>
+<ol>
+  <li>常规项目任务</li>
+  <li>项目例会</li>
+  <li>ECM系统学习</li>
+</ol>
+
+<h4 id="ipms-共计-12-小时">IPMS ，共计 12 小时</h4>
+<ul>
+  <li>视频学习</li>
+  <li>考试</li>
+</ul>
+
+<h4 id="pdca共计-65-小时">PDCA，共计 6.5 小时</h4>
+<ul>
+  <li>时间记录</li>
+  <li>财务收支记录</li>
+</ul>
+
+<h4 id="深圳展会--815至818">深圳展会 -8/15至8/18</h4>
+<p>8/16至8-17参展，展会纯时间约10小时（论坛6小时，展会4小时）
+8/15与8/18 路上</p>
+
+<h4 id="阅读-共计7小时">阅读 ，共计7小时</h4>
+<ul>
+  <li>《刻意学习》</li>
+  <li>分答小讲</li>
+  <li>一些碎片化阅读</li>
+</ul>
+
+<h3 id="其他杂事共计8小时">其他杂事，共计8小时</h3>
+<ul>
+  <li>体检</li>
+  <li>ECM培训路上交通</li>
+  <li>身份证、房产证办理</li>
+  <li>报销</li>
+  <li>展会资料下载及拷贝</li>
+</ul>
+
+<h1 id="总结">总结</h1>
+<ol>
+  <li>前紧后松，未能从源头上掐住堕落腐败的时间，8/26至8/30《小说1》，9/3至9/6两次时间段《小说2》。</li>
+  <li>投入较大的Rails完成质量评价：质量非常一般，未做ORID总结，未做报错记录，未做提取练习。基本是看着教程敲代码。</li>
+  <li>经过这段时间的集训，发现在日常工作中，也可以穿插任务。只要有信心，一定可以找到合适的时间来做合适的事情。</li>
+  <li>如果是具体的独立性任务，适宜安排一些集中的整体性时间来处理，譬如<font color="red">IPMS视频学习和考试</font>。</li>
+  <li>如果是连续性的长期性任务，需要保证每天都接触任务，每天推进一点点，形成持续行动和惯性，譬如<font color="red">全栈营的学习</font>。</li>
+  <li>不要高估自己的意志力，我的意志力对于抵抗看小说的诱惑，从来都是很小很小的，所以，<font color="red">最好的办法，就是远离诱惑</font>，不要开始一本小说的阅读。</li>
+</ol>
+
+<h1 id="8月大事记">8月大事记</h1>
+<ul>
+  <li>8月8，入Rails精进群</li>
+  <li>8月15，参加深圳展会</li>
+</ul>
+
+<h1 id="收获">收获</h1>
+<ol>
+  <li>最大的收获，是开始记录和总结时间和开销数据，虽然中间有过没及时的记录，不过后续都补了回来。</li>
+  <li>学习或者阅读的内容，确实需要手写记录，这样印象更加深刻。</li>
+  <li>从7月份开始控制不必要的消费和支出，应该来说有点成效，囤东西的行为得到了一些遏制，支出下降。</li>
+</ol>
+
+<h1 id="9月计划">9月计划</h1>
+<ol>
+  <li>Rails按计划学习。</li>
+  <li>时间和财务开销继续做记录。</li>
+  <li>复盘和总结，强调每项任务的输出。</li>
+  <li>平衡工作、学习与家庭，需要在木木培养计划上加入内容。</li>
+</ol>
 
         </div>
     </div>
